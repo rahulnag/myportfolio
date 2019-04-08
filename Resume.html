@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html style="background-color:#455A64;">
+
+<head>
+<style>
+h2{
+ font-sans:serif;
+ font-size:20px;
+}
+
+h4{
+ width:100%;
+}
+
+li,p{
+font-sans:serif;
+font-size:20px;
+}
+
+.sidenav
+{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover
+{
+ color: #f1f1f1;
+ transform: scale(1.2);
+}
+
+.main {
+   margin-left: 200px;
+   padding-top:20px;
+   padding: 10px 10px;
+   border-radius:50px;
+   background-color:#CFD8DC;
+}
+
+.main_content_class {
+  height: 100vh;
+  margin-left: 200px;
+  margin-top:20px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:20px;
+  padding-bottom:50px;
+  background-color:#CFD8DC;
+  border-radius:50px;
+}
+
+.welcome{
+  background-image: url("images/mypic.jpeg");
+ /* Add the blur effect */
+  filter: blur(50px);
+  -webkit-filter: blur(15px);
+  width:100%;
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: small;
+}
+.bg-text {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:70px;
+  color:#263238;
+  position: absolute;
+  top: 40%;
+  left: 35%
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<!THIS DIVISION IS FOR THE MY NAME AND DESIGNATION>
+<div class="main">
+<center style="font-size:50px;border-style:solid;border-radius:50px; font-family: Arial, Helvetica, sans-serif;">
+<marquee>RAHUL NAG</marquee>
+<center style="font-size:20px;"> Software Engineer at IQVIA (ex. IMS Health)</center>
+</center>
+</div>
+
+
+
+
+
+
+<!THIS DEVISION IS FOR SIDE NAVIGATION BAR>
+<div class="sidenav">
+<a href ="#" onclick= home() onmouseover="home()">Home</a></br>
+<a href ="#" onmouseover="career_objective()">Career Objective</a></br>
+<a href ="#" onmouseover="work_experience()">Work Experience</a></br>
+<a href ="#" onmouseover="professional_summary()">Professional Summary</a></br>
+<a href ="#" onmouseover="technical_skills()">Technical Skills</a></br>
+<a href ="#" onmouseover="projects()">Projects Done</a></br>
+<a href ="#" onmouseover="educational_background()">Educational Background</a></br>
+<a href ="#" onmouseover="strength()">Strength</a></br>
+<a href ="#" onmouseover="personal_details()">Personal Details</a></br>
+<a href ="#" onmouseover="contact_details()">Contact Details</a></br>
+
+</div>
+
+
+<div id="main_content_id" class="main_content_class">
+<div class="welcome"></div>
+<p class="bg-text">
+<u>
+WELCOME TO RAHUL's PORTFOLIO
+</u>
+</p>
+
+</div>
+
+
+<script>
+function home() {
+  document.getElementById("main_content_id").innerHTML = "<object height='100%' width='100%'  data='html/home.html' ></object>";
+  }
+function career_objective() {
+  document.getElementById("main_content_id").innerHTML = "<object width='100%' height='100%' data='html/career_objective.html' ></object>";
+}
+function work_experience() {
+  document.getElementById("main_content_id").innerHTML = "<object width='100%' height='100%' data='html/work_experience.html' ></object>";
+}
+
+function professional_summary() {
+  document.getElementById("main_content_id").innerHTML = "<object width='100%' height='100%' data='html/professional_summary.html' ></object>";
+}
+
+function technical_skills() {
+  document.getElementById("main_content_id").innerHTML = "<object width='100%' height='100%' data='html/technical_skills.html' ></object>";
+}
+
+function projects(){
+  document.getElementById("main_content_id").innerHTML = "<object width='100%' height='100%' data='html/projects.html' ></object>";
+}
+
+function strength(){
+  document.getElementById("main_content_id").innerHTML = "<object width='100%' height='100%' data='html/strength.html' ></object>";
+}
+
+function personal_details(){
+  document.getElementById("main_content_id").innerHTML = "<object width='100%' height='100%' data='html/personal_details.html' ></object>";
+}
+
+function contact_details(){
+  document.getElementById("main_content_id").innerHTML = "<object width='100%' height='100%' data='html/contact_details.html' ></object>";
+}
+</script>
+
+
+
+
+
+</body>
+
+</html>
