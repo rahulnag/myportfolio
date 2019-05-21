@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
 <html style="background-color:#455A64;">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+<title>Portfolio</title>
+<link rel="shortcut icon" href="images/li.png" />
 <style>
 h2{
  font-sans:serif;
@@ -27,14 +29,14 @@ font-size:20px;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 130px;
+  padding-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   color: #818181;
   display: block;
 }
@@ -54,7 +56,7 @@ font-size:20px;
 }
 
 .main_content_class {
-  height: 100vh;
+  height: 120vh;
   margin-left: 200px;
   margin-top:20px;
   padding-left:50px;
@@ -95,6 +97,39 @@ font-size:20px;
 }
 
 
+footer {
+   margin-left: 200px;
+   margin-top:20px;
+   padding-top:20px;
+   padding: 10px 10px;
+   border-radius:50px;
+   background-color:#CFD8DC;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-left:30px;
+}
+.avatar2 {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-left:30px;
+}
+
+.avatar_in_nav {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  padding-left:10px;
+  border-radius: 50%;
+}
+
+
 </style>
 
 </head>
@@ -116,7 +151,11 @@ font-size:20px;
 
 <!THIS DEVISION IS FOR SIDE NAVIGATION BAR>
 <div class="sidenav">
-<a href ="#" onclick= home() onmouseover="home()">Home</a></br>
+
+<img class="avatar_in_nav" src="images/avtar.jpg" alt="Avatar"/>
+<br></br>
+<br></br>
+<a href ="#" onclick= "home()" onmouseover="home()">Home</a></br>
 <a href ="#" onmouseover="career_objective()">Career Objective</a></br>
 <a href ="#" onmouseover="work_experience()">Work Experience</a></br>
 <a href ="#" onmouseover="professional_summary()">Professional Summary</a></br>
@@ -129,7 +168,7 @@ font-size:20px;
 
 </div>
 
-
+<!THIS DEVISION IS FOR MAIN CONTENT>
 <div id="main_content_id" class="main_content_class">
 <div class="welcome"></div>
 <p class="bg-text">
@@ -182,5 +221,18 @@ function contact_details(){
 
 
 </body>
+
+<footer>
+
+<img class="avatar" src="images/whatsapp.png" alt="Whats App"/> 8986774801
+<img class="avatar" src="images/gmail.png" alt="Gmail"/> mr.rahulnag67@gmail.com
+<a href="https://www.facebook.com/rahulnag310194" target="_blank">
+<img class="avatar2" src="images/fb.png" alt="Facebook"/></a>
+
+<a href="https://www.facebook.com/rahulnag310194" target="_blank">
+<img height="90px" class="avatar2" src="images/li.png" alt="LinkedIn"/>
+</a>
+
+</footer>
 
 </html>
